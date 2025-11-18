@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="logo">MyPortfolio</div>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <button id="darkToggle" class="dark-btn">🌙</button>
+    <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="hero-text">
+        <h1>Hello, I’m <span>Your Name</span></h1>
+        <p>A Blogger • Designer • E-Commerce Specialist</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <div class="hero-img">
+        <img src="oo.jpg" width="500px height 400px">
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a creative blogger, designer, and e-commerce specialist with modern
+        UI/UX experience. I build visually appealing and highly responsive websites.
+    </p>
+
+    <div class="experience-wrapper">
+
+        <div class="exp-circle">
+            <span>90%</span>
+            <p>Blogger</p>
+        </div>
+
+        <div class="exp-circle">
+            <span>85%</span>
+            <p>Designer</p>
+        </div>
+
+        <div class="exp-circle">
+            <span>80%</span>
+            <p>E-Commerce</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="projects">
+    <h2 > My projects </h2>
+
+    <div class="project-grid">
+        <div class="project-card" data-title="Project 1" data-desc="This is project 1 description.">
+            <img src="ecommerce.jpg" alt="  my work" width="500px" height="500px">
+            <h3> E E-Commerce</h3>
+        </div>
+
+        <div class="project-card" data-title="Project 2" data-desc="This is project 2 description.">
+           <img src="designer.jpg" alt=" my work" width="500px" height="500px">
+            <h3>Designer</h3>
+        </div>
+
+        <div class="project-card" data-title="Project 3" data-desc="This is project 3 description.">
+            <img src="blogger.jpg" alt=" mhy work " width="600px" height="500px">
+            <h3>blogger</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+    </div>
+</div>
+
+<!-- Skills -->
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+
+    <div class="skill-chips">
+        <div class="chip" style="--skill-level:90%;">HTML</div>
+        <div class="chip" style="--skill-level:85%;">Blogger</div>
+        <div class="chip" style="--skill-level:80%;">Designer</div>
+        <div class="chip" style="--skill-level:75%;">CSS</div>
+        <div class="chip" style="--skill-level:70%;">E-Commerce</div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Email Address">
+        <textarea id="message" placeholder="Message"></textarea>
+        <button type="submit" class="btn">Send</button>
+    </form>
+
+    <p id="formMsg"></p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 Your Name. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
